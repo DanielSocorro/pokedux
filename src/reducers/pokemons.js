@@ -4,7 +4,7 @@ const initialState = {
     pokemons: [],
 };
 
-export const pokemonReducer = (state = initialState, action) => {
+export const pokemonsReducer = (state = initialState, action) => {
     switch(action.type) {
         case SET_POKEMONS: 
             return {...state, pokemons: action.payload };
